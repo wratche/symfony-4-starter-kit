@@ -1,4 +1,3 @@
 parameters:
 		excludes_analyse:
 			- %rootDir%/../../../src/Entity/*
-			- %rootDir%/../../../src/Twig/AppExtension.php

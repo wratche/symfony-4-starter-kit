@@ -26,6 +26,7 @@ return [
 
     'exclude' => [
         'src/Entity/',
+        'src/DataFixtures/',
         'src/Kernel.php',
     ],
     'add' => [

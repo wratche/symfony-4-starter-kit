@@ -7,3 +7,8 @@ imports:
 services:
   PhpCsFixer\Fixer\ArrayNotation\ArraySyntaxFixer:
     syntax: short
+
+parameters:
+  skip:
+    SlevomatCodingStandard\Sniffs\Variables\UnusedVariableSniff:
+      - 'src/DataFixtures/BaseFixture.php'
