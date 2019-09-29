@@ -3,6 +3,7 @@
   "description": "Extended symfony 4 skeleton project",
   "license": "MIT",
   "type": "project",
+  "minimum-stability": "stable",
   "require": {
     "php": "^7.3.1",
     "ext-ctype": "*",
