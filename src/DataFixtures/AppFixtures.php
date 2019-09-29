@@ -4,13 +4,18 @@ declare(strict_types=1);
 
 namespace App\DataFixtures;
 
-use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Common\Persistence\ObjectManager;
 
-class AppFixtures extends Fixture
+class AppFixtures extends BaseFixture
 {
-    public function load(ObjectManager $manager): void
+    public function loadData(ObjectManager $manager): void
     {
+        $this->createMany(10, 'basic', function (int $i): void {
+//                  $user = new User();
+//                  $user->setFirstName($this->faker->firstName);
+//
+//                   return $user;
+        });
         $manager->flush();
     }
 }
